@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+        <TextView
+            android:textColor="@color/colorTextPrimary"
+            android:background="@color/colorTextViewBackground"
+            android:textStyle="bold"
+            android:textSize="@dimen/txtTitle"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="TIP CALCULATOR"
+            android:id="@+id/txtTitle"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <EditText
+            android:textStyle="italic"
+            android:textColor="@color/colorTextSecondary"
+            android:textColorHint="@color/colorTextSecondary"
+            android:maxLength="6"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/edtMeal"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/edtMeal"
+            android:hint="Meal cost" />
+
+        <TextView
+            android:textStyle="italic"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/txtSelect"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Select Tip Percentage"
+            android:id="@+id/txtSelect"/>
+
+        <TextView
+            android:textStyle="italic"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/txtPercentage"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            android:textAlignment="center"
+            android:id="@+id/txtPercentage"/>
+
+
+        <SeekBar
+            android:max="50"
+            android:progress="15"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            />
+
+
+        <Button
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@dimen/btnReset"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:id="@+id/btnReset"/>
+
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorTextViewBackground"
+            android:textSize="@dimen/txtResult"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL"
+            android:textAlignment="center"
+            android:id="@+id/txtResult"/>
+
+    </LinearLayout>
+
+
+
+
+
+
